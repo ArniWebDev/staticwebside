@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #737B7D;
+}
+
+body{
+    background-color: #F4F6FB;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrap{
+    margin: 2rem auto;
+    width: 100%;
+}
+
+
+/* Navbar */
+.navbar{
+    justify-content: space-between;
+    flex-direction: row;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+/* LOGO */
+.navbar .logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3C64B1;
+    cursor: pointer;
+    letter-spacing: .15rem;
+}
+
+/* MENÜ */
+.menu li{
+    display: inline;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.menu li:nth-child(1){
+    color: #3C64B1;
+}
+
+.menu li:hover{
+    color: #3C64B1;
+}
+
+/* Sign In / Sign Up */
+.sign{
+    flex-direction: row;
+}
+
+.sign li{
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.sign li:hover{
+    background-color:#3C64B1;
+    color:  #F4F6FB;
+}
+
+/* FELSŐ RÉSZ */
+.top{
+    flex-direction: row;
+    margin: 4rem auto;
+    width: 75%;
+}
+
+
+
+.top .right{
+    margin-left: 2rem;
+}
+
+.top .right .text-2,.text-3{
+    margin-bottom: 3rem;
+}
+
+.top .right .text-1{
+    color: #3C64B1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.top .right .text-2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.top .right .text-3{
+
+    letter-spacing: .05rem;
+    line-height: 140%;
+    opacity: .9;
+}
+
+.top .right .contant-btn{
+    background-color: transparent;
+    padding: .8rem 1.2rem;
+    font-size: 1.1rem;
+    color: #3C64B1;
+    border: 1px solid #3C64B1;
+    cursor: pointer;
+}
+
+/* KÖZÉPSŐ RÉSZ */
+
+.middle{
+    flex-direction: row;
+    position: relative;
+    margin: 5rem 0;
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.middle .left{
+    margin-right: 2rem;
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "left right"
+    ;
+}
+
+.middle .left i{
+    color:#3C64B1;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.middle .left .text-1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #373F41;
+    grid-area: title;
+}
+.middle .left .text-2{
+    grid-area: left;
+    font-size: .9rem;
+    width: 20rem;
+    margin-top: 5rem;
+}
+.middle .left .text-3{
+    grid-area: right;
+    font-size: .9rem;
+    width: 20rem;
+    margin-top: 5rem;
+
+}
+
+/* ALSÓ RÉSZ */
+
+.bottom{
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+}
+
+.bottom .szoveg .text-1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #373F41;
+    letter-spacing: .2rem;   
+    margin-bottom: 2rem; 
+}
+
+.bottom .szoveg .text-2{
+    opacity: .9;
+    letter-spacing: .05rem;
+}
+
+.bottom .content{
+    flex-direction: row;
+    width: 75%;
+    margin-top: 2rem;
+}
+
+.bottom .content .box i{
+    color: #3C64B1;
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.bottom .content .box .title{
+        font-size: 1.5rem;
+        color: #373F41;
+        margin-bottom: 1rem;
+        font-weight: bold;
+}
+
+.bottom .content .box .text-1{
+    margin-bottom: 1rem;
+}
+
+.bottom .content .box .link{
+    cursor: pointer;
+    color: #3C64B1;
+}
